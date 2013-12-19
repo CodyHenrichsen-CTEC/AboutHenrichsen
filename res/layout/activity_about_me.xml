@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/infoField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/foodInfo"
+        tools:context=".AboutMeActivity" />
+
+    <Button
+        android:id="@+id/lifeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoField"
+        android:layout_marginLeft="45dp"
+        android:background="@color/blue"
+        android:text="@string/lifeButton" />
+
+    <Button
+        android:id="@+id/stuffButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/stuffButton" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lifeButton"
+        android:layout_below="@+id/lifeButton"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoField"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/spicy_food"
+        android:text="@string/foodButton" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stuffButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
