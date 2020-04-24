@@ -15,7 +15,7 @@ public class AboutMeActivity extends Activity
 	private Button lifeButton, foodButton, stuffButton;
 	private TextView infoField;
 	private ImageView pictureStuff;
-
+	private String demoString;
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
@@ -29,7 +29,7 @@ public class AboutMeActivity extends Activity
 		infoField = (TextView) findViewById(R.id.infoField);
 		
 		pictureStuff = (ImageView) findViewById(R.id.imageView1);
- 
+		demoString = "Java Rocks"; 
 		setupListeners();
 	}
 
